@@ -9,12 +9,12 @@ Exploring how different LRP composite rules explain the same prediction, evaluat
 1. Loads VGG16 and classifies one image
 2. Applies three [zennit](https://github.com/chr5tphr/zennit) composite rules to produce heatmaps
 3. Scores each on CUE dimensions (Legibility, Readability, Interpretability) using simple proxies
-4. Asks BLIP-2 (VLM) for a second perspective on each explanation
+4. Asks Qwen2.5-VL (VLM) for a second perspective on each explanation
 
 ## Run locally
 
 ```bash
-pip install zennit torchvision transformers accelerate
+pip install zennit torchvision transformers accelerate qwen-vl-utils
 jupyter notebook cue_meets_lrp.ipynb
 ```
 
